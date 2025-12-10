@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Маффин Landing Page</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header py-3 bg-light border-bottom">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <div class="header-logo fs-4 fw-bold">Маффин</div>
+        <nav class="d-flex flex-wrap header-nav">
+          <a class="nav-link" href="#about">О нас</a>
+          <a class="nav-link" href="#prices">Цены</a>
+          <a class="nav-link" href="#delivery">Доставка</a>
+          <a class="nav-link" href="#blog">Блог</a>
+          <a class="nav-link" href="#contacts">Контакты</a>
+        </nav>
+      <div class="mt-2 mt-md-0" id="authArea">
+        <!-- сюда JS подставит кнопки Вход/Регистрация или Имя + Выход -->
+      </div>
+    </div>
+  </header>
+
+  <!-- INTRO / HERO SECTION -->
+  <section class="intro-section container py-5 d-flex flex-column flex-lg-row align-items-center justify-content-between">
+    <div class="intro-text-wrapper mb-4 mb-lg-0">
+      <h1 class="intro-title">Свежие маффины на любой вкус</h1>
+      <p class="intro-text">
+        Мы готовим маленькие сладости, которые приносят большие улыбки в любой день и без повода
+      </p>
+      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#moreInfoModal">Подробнее</button>
+    </div>
+    <img class="intro-image img-fluid rounded" src="img/Hero.jpg" alt="Маффины">
+  </section>
+
+  <!-- WHY US SECTION -->
+  <section id="why" class="why-us-section text-center py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title mb-4">Почему мы?</h2>
+      <div class="row justify-content-center g-4">
+        <div class="col-md-4">
+          <div class="feature-item p-4 rounded bg-white h-100">
+            <img class="feature-icon mb-3" src="img/why_us_1.jpg" alt="Icon 1">
+            <h3 class="feature-title">Мы работаем с любовью</h3>
+            <p class="feature-text">Большой опыт и квалификация специалистов гарантирует безупречное качество заказов.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-item p-4 rounded bg-white h-100">
+            <img class="feature-icon mb-3" src="img/why_us_2.jpg" alt="Icon 2">
+            <h3 class="feature-title">Бережная доставка</h3>
+            <p class="feature-text">Мы упакуем все ваши маффины в коробки и доставим их целыми и невредимыми.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-item p-4 rounded bg-white h-100">
+            <img class="feature-icon mb-3" src="img/why_us_3.jpg" alt="Icon 3">
+            <h3 class="feature-title">Натуральные продукты</h3>
+            <p class="feature-text">Отсутствие красителей и консервантов гарантирует безопасность для здоровья.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS SECTION -->
+  <section class="stats-section py-5">
+    <div class="container text-center">
+      <div class="row justify-content-center g-4">
+        <div class="col-md-3">
+          <div class="stat-item">
+            <h3 class="stat-number">1000</h3>
+            <p class="stat-text">довольных клиентов</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-item">
+            <h3 class="stat-number">8000</h3>
+            <p class="stat-text">проданных маффинов</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-item">
+            <h3 class="stat-number">3</h3>
+            <p class="stat-text">года опыта</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="info-section bg-white py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <h2 class="section-title mb-3">О нашей кондитерской</h2>
+          <p class="about-text">
+            «Маффин» — это маленькая домашняя кондитерская, которая выросла в полноценный сервис по
+            приготовлению и доставке маффинов и капкейков на любые события. Мы работаем по предзаказу,
+            подстраиваемся под ваши предпочтения и заботимся о каждом госте.
+          </p>
+          <p class="about-text">
+            В наших рецептах нет искусственных красителей и консервантов, мы используем фермерские яйца,
+            натуральное масло и свежие фрукты. Наше главное правило — маффины должны радовать не только
+            вкусом, но и внешним видом.
+          </p>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="img/about.jpg" alt="О нас" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICES SECTION -->
+  <section id="prices" class="info-section bg-light py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Цены</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h3 class="card-title h5 mb-3">Классические маффины</h3>
+              <p class="card-text mb-2">Ваниль, шоколад, ягоды.</p>
+              <p class="fw-bold mb-0">от 150 ₽ / шт.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h3 class="card-title h5 mb-3">Маффины с начинкой</h3>
+              <p class="card-text mb-2">Карамель, сливки, фруктовые начинки.</p>
+              <p class="fw-bold mb-0">от 190 ₽ / шт.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h3 class="card-title h5 mb-3">Индивидуальный дизайн</h3>
+              <p class="card-text mb-2">Фото, логотипы, топперы.</p>
+              <p class="fw-bold mb-0">от 220 ₽ / шт.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CELEBRATION SECTION -->
+  <section class="celebration-section container py-5">
+    <h2 class="section-title text-center mb-2">Сладости на праздник</h2>
+    <p class="text-center text-muted mb-4">
+      Выберите повод — мы подберём оформление и вкусы.
+    </p>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4 col-lg-3 text-center">
+        <img class="celebration-image img-fluid rounded mb-2" src="img/celebration_1.jpg" alt="День рождения">
+        <h3 class="celebration-title">День рождения</h3>
+        <button class="btn btn-dark order-btn">Заказать</button>
+      </div>
+      <div class="col-md-4 col-lg-3 text-center">
+        <img class="celebration-image img-fluid rounded mb-2" src="img/celebration_2.jpg" alt="Хэллоуин">
+        <h3 class="celebration-title">Хэллоуин</h3>
+        <button class="btn btn-dark order-btn">Заказать</button>
+      </div>
+      <div class="col-md-4 col-lg-3 text-center">
+        <img class="celebration-image img-fluid rounded mb-2" src="img/celebration_3.jpg" alt="Свадьба">
+        <h3 class="celebration-title">Свадьба</h3>
+        <button class="btn btn-dark order-btn">Заказать</button>
+      </div>
+      <div class="col-md-4 col-lg-3 text-center">
+        <img class="celebration-image img-fluid rounded mb-2" src="img/celebration_4.jpg" alt="Новый год">
+        <h3 class="celebration-title">Новый год</h3>
+        <button class="btn btn-dark order-btn">Заказать</button>
+      </div>
+      <div class="col-md-4 col-lg-3 text-center">
+        <img class="celebration-image img-fluid rounded mb-2" src="img/celebration_5.jpg" alt="8 марта">
+        <h3 class="celebration-title">8 марта</h3>
+        <button class="btn btn-dark order-btn">Заказать</button>
+      </div>
+      <div class="col-md-4 col-lg-3 text-center">
+        <img class="celebration-image img-fluid rounded mb-2" src="img/celebration_6.jpg" alt="Корпоратив">
+        <h3 class="celebration-title">Корпоратив</h3>
+        <button class="btn btn-dark order-btn">Заказать</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO MUFFIN SECTION -->
+  <section id="photo-order" class="photo-muffin-section container py-5">
+    <h2 class="section-title text-center mb-4">Закажи маффин по фото</h2>
+    <form class="photo-form bg-light p-4 rounded mx-auto" style="max-width: 500px;">
+      <input type="text" class="form-control mb-3" placeholder="Имя" required>
+      <input type="tel" class="form-control mb-3" placeholder="Номер" required>
+      <input type="file" class="form-control mb-3" placeholder="Загрузить фотографию" required>
+
+      <div class="mb-3">
+        <label class="form-label d-block">Способ оплаты</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="photoPayment"
+                 id="photoPayCard" value="card" required>
+          <label class="form-check-label" for="photoPayCard">
+            Банковская карта онлайн
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="photoPayment"
+                 id="photoPayTransfer" value="transfer">
+          <label class="form-check-label" for="photoPayTransfer">
+            Перевод по реквизитам
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="photoPayment"
+                 id="photoPayCash" value="cash">
+          <label class="form-check-label" for="photoPayCash">
+            Наличные курьеру
+          </label>
+        </div>
+      </div>
+
+      <div id="photoPaymentCardFields" class="mb-3 d-none">
+        <label class="form-label">Данные карты</label>
+        <input type="text" class="form-control mb-2" id="photoCardNumber" placeholder="Номер карты (16 цифр)">
+        <div class="row g-2 mb-2">
+          <div class="col-6">
+            <input type="text" class="form-control" id="photoCardExpiry" placeholder="MM/YY">
+          </div>
+          <div class="col-6">
+            <input type="text" class="form-control" id="photoCardCvv" placeholder="CVV">
+          </div>
+        </div>
+        <input type="text" class="form-control" id="photoCardName" placeholder="Имя на карте">
+      </div>
+
+      <div id="photoPaymentTransferFields" class="mb-3 d-none">
+        <label class="form-label">Данные для перевода</label>
+        <input type="text" class="form-control mb-2" id="photoTransferFio" placeholder="ФИО получателя">
+        <input type="text" class="form-control mb-2" id="photoTransferBank" placeholder="Банк">
+        <input type="text" class="form-control mb-2" id="photoTransferAccount" placeholder="Номер счёта / IBAN">
+        <input type="text" class="form-control" id="photoTransferComment" placeholder="Комментарий (необязательно)">
+      </div>
+
+      <button type="submit" class="btn btn-dark w-100">Заказать</button>
+    </form>
+  </section>
+
+  <!-- DELIVERY SECTION -->
+  <section id="delivery" class="info-section bg-white py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Доставка</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-5">
+          <div class="delivery-card h-100 p-4 rounded bg-light">
+            <h3 class="h5 mb-3"><i class="bi bi-truck me-2"></i>По городу</h3>
+            <ul class="mb-0">
+              <li>Доставка по городу в пределах МКАД — от 300 ₽.</li>
+              <li>Время доставки согласуем с вами заранее.</li>
+              <li>Курьер позвонит за 30 минут до приезда.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="delivery-card h-100 p-4 rounded bg-light">
+            <h3 class="h5 mb-3"><i class="bi bi-shop me-2"></i>Самовывоз</h3>
+            <ul class="mb-0">
+              <li>Самовывоз из нашей кондитерской по предварительному времени.</li>
+              <li>Адрес и время забора уточняются при подтверждении заказа.</li>
+              <li>Удобно, если вы живёте неподалёку или проезжаете мимо.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAYMENT SECTION -->
+  <section id="payment" class="info-section bg-light py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-3">Оплата и условия</h2>
+      <p class="text-center text-muted mb-4">
+        Выберите удобный способ оплаты и ознакомьтесь с основными условиями оформления заказа.
+      </p>
+
+      <div class="row g-4 justify-content-center payment-row">
+        <div class="col-md-5">
+          <div class="payment-card h-100">
+            <div class="d-flex align-items-center mb-3">
+              <i class="bi bi-credit-card-2-front payment-icon"></i>
+              <h3 class="h5 mb-0 ms-2">Способы оплаты</h3>
+            </div>
+            <ul class="mb-0">
+              <li>Банковская карта онлайн при оформлении заказа</li>
+              <li>Перевод по реквизитам после подтверждения заказа</li>
+              <li>Наличные курьеру при доставке</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <div class="payment-card h-100">
+            <div class="d-flex align-items-center mb-3">
+              <i class="bi bi-file-earmark-text payment-icon"></i>
+              <h3 class="h5 mb-0 ms-2">Условия</h3>
+            </div>
+            <ul class="mb-0">
+              <li>Предоплата 50% для индивидуальных заказов</li>
+              <li>Отмена заказа не позднее чем за 24 часа до доставки</li>
+              <li>Все изделия готовятся в день доставки</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG SECTION -->
+  <section id="blog" class="info-section bg-white">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Блог</h2>
+
+      <div id="blogCarousel" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-md-8 col-lg-6">
+                <div class="card h-100 text-center">
+                  <img
+                    src="img/blog_1.jpg"
+                    class="card-img-top"
+                    alt="Маффины для детского праздника">
+                  <div class="card-body">
+                    <h3 class="card-title h5 mb-2">5 идей маффинов на детский праздник</h3>
+                    <p class="text-muted small mb-3">
+                      Как сделать так, чтобы каждый ребёнок нашёл любимый вкус.
+                    </p>
+                    <button
+                      class="btn btn-outline-dark blog-more-btn"
+                      data-article="kids">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-md-8 col-lg-6">
+                <div class="card h-100 text-center">
+                  <img
+                    src="img/blog_2.jpg"
+                    class="card-img-top"
+                    alt="Тренды оформления капкейков">
+                  <div class="card-body">
+                    <h3 class="card-title h5 mb-2">Тренды оформления</h3>
+                    <p class="text-muted small mb-3">
+                      Минимализм, пастельные оттенки и съедобные топперы.
+                    </p>
+                    <button
+                      class="btn btn-outline-dark blog-more-btn"
+                      data-article="trends">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-md-8 col-lg-6">
+                <div class="card h-100 text-center">
+                  <img
+                    src="img/blog_3.jpg"
+                    class="card-img-top"
+                    alt="Как хранить маффины дома">
+                  <div class="card-body">
+                    <h3 class="card-title h5 mb-2">Как хранить маффины дома</h3>
+                    <p class="text-muted small mb-3">
+                      Простые советы, чтобы десерт оставался свежим дольше.
+                    </p>
+                    <button
+                      class="btn btn-outline-dark blog-more-btn"
+                      data-article="storage">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS SECTION -->
+  <section id="reviews" class="info-section bg-light py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Отзывы клиентов</h2>
+
+      <!-- Карусель отзывов -->
+      <div id="reviewsCarousel" class="carousel slide mb-4" data-bs-ride="false">
+        <div class="carousel-inner" id="reviewsCarouselInner">
+          <!-- Слайды добавляет JS -->
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+      </div>
+
+      <!-- Форма добавления отзыва -->
+      <form id="newReviewForm" class="review-form">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="mb-3 mb-md-0">
+              <label for="reviewName" class="form-label">Имя</label>
+              <input type="text" class="form-control" id="reviewName" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3 mb-md-0">
+              <label for="reviewSubtitle" class="form-label">Повод (необязательно)</label>
+              <input type="text" class="form-control" id="reviewSubtitle" placeholder="Например: День рождения, Корпоратив">
+            </div>
+          </div>
+          <div class="col-12 mt-3">
+            <div class="mb-3">
+              <label for="reviewText" class="form-label">Отзыв</label>
+              <textarea id="reviewText" class="form-control" rows="3" required></textarea>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-dark mt-2">Отправить отзыв</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACTS SECTION -->
+  <section id="contacts" class="info-section bg-white py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Контакты и обратная связь</h2>
+      <div class="row g-4">
+        <div class="col-md-5">
+          <h3 class="h5 mb-3">Как с нами связаться</h3>
+          <p class="mb-1"><i class="bi bi-telephone me-2"></i>+7 (812) 945-23-67</p>
+          <p class="mb-1"><i class="bi bi-envelope me-2"></i>hello@muffin.ru</p>
+          <p class="mb-1"><i class="bi bi-geo-alt me-2"></i>Ул. Лавандовая, 27 — Санкт-Петербург</p>
+          <p class="text-muted mt-3">
+            Пишите нам, если у вас есть вопросы по заказу, особые пожелания или предложения по сотрудничеству.
+          </p>
+        </div>
+        <div class="col-md-7">
+          <h3 class="h5 mb-3">Форма обратной связи</h3>
+          <form id="feedbackForm">
+            <div class="mb-3">
+              <label for="fbName" class="form-label">Имя</label>
+              <input type="text" class="form-control" id="fbName" required>
+            </div>
+            <div class="mb-3">
+              <label for="fbEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="fbEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="fbMessage" class="form-label">Сообщение</label>
+              <textarea id="fbMessage" class="form-control" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer py-5 bg-dark text-light">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-4">
+      <div>
+        <div class="footer-logo fs-4 fw-bold mb-2">Маффин</div>
+        <p class="small text-muted mb-0">
+          Маленькая кондитерская, которая делает ваши праздники чуть слаще.
+        </p>
+      </div>
+      <div>
+        <h5>Информация</h5>
+        <ul class="list-unstyled">
+          <li><a href="#why" class="text-light text-decoration-none">Почему мы?</a></li>
+          <li><a href="#prices" class="text-light text-decoration-none">Как сделать заказ?</a></li>
+          <li><a href="#delivery" class="text-light text-decoration-none">Доставка и возврат</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Служба поддержки</h5>
+        <ul class="list-unstyled">
+          <li><a href="#contacts" class="text-light text-decoration-none">Обратная связь</a></li>
+          <li><a href="#payment" class="text-light text-decoration-none">Оплата и условия</a></li>
+          <li><a href="#reviews" class="text-light text-decoration-none">Отзывы</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Мы в соц. сетях</h5>
+        <div class="d-flex gap-2 mt-2">
+          <i class="bi bi-facebook fs-4"></i>
+          <i class="bi bi-instagram fs-4"></i>
+          <i class="bi bi-telegram fs-4"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Кнопка "Наверх" -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Наверх">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- MODALS -->
+
+  <!-- Подробнее (Hero) -->
+  <div class="modal fade" id="moreInfoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5 class="modal-title mb-3">Подробнее о маффинах</h5>
+        <p>Наши маффины готовятся только из свежих и натуральных ингредиентов. Мы заботимся о каждом заказе, поэтому вы получаете продукт высочайшего качества!</p>
+        <button class="btn btn-dark w-100" data-bs-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Оформление заказа (из Сладости на праздник) -->
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5 class="modal-title mb-3">Оформление заказа</h5>
+        <form id="orderForm">
+          <div class="mb-3">
+            <label class="form-label">Имя</label>
+            <input type="text" class="form-control" id="orderName" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Номер телефона</label>
+            <input type="tel" class="form-control" id="orderPhone" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Количество штук</label>
+            <input type="number" class="form-control" id="orderQty" min="1" value="1" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label d-block">Способ оплаты</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="orderPayment"
+                     id="orderPayCard" value="card" required>
+              <label class="form-check-label" for="orderPayCard">
+                Банковская карта онлайн
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="orderPayment"
+                     id="orderPayTransfer" value="transfer">
+              <label class="form-check-label" for="orderPayTransfer">
+                Перевод по реквизитам
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="orderPayment"
+                     id="orderPayCash" value="cash">
+              <label class="form-check-label" for="orderPayCash">
+                Наличные курьеру
+              </label>
+            </div>
+          </div>
+
+          <div id="orderPaymentCardFields" class="mb-3 d-none">
+            <label class="form-label">Данные карты</label>
+            <input type="text" class="form-control mb-2" id="orderCardNumber" placeholder="Номер карты (16 цифр)">
+            <div class="row g-2 mb-2">
+              <div class="col-6">
+                <input type="text" class="form-control" id="orderCardExpiry" placeholder="MM/YY">
+              </div>
+              <div class="col-6">
+                <input type="text" class="form-control" id="orderCardCvv" placeholder="CVV">
+              </div>
+            </div>
+            <input type="text" class="form-control" id="orderCardName" placeholder="Имя на карте">
+          </div>
+
+          <div id="orderPaymentTransferFields" class="mb-3 d-none">
+            <label class="form-label">Данные для перевода</label>
+            <input type="text" class="form-control mb-2" id="orderTransferFio" placeholder="ФИО получателя">
+            <input type="text" class="form-control mb-2" id="orderTransferBank" placeholder="Банк">
+            <input type="text" class="form-control mb-2" id="orderTransferAccount" placeholder="Номер счёта / IBAN">
+            <input type="text" class="form-control" id="orderTransferComment" placeholder="Комментарий (необязательно)">
+          </div>
+
+          <button type="submit" class="btn btn-dark w-100">Оформить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Заказ по фото — успешное оформление -->
+  <div class="modal fade" id="photoOrderSuccessModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4 text-center">
+        <h5 class="modal-title mb-3">Заказ оформлен</h5>
+        <p>Ваш заказ по фото оформлен. Ожидайте звонок от оператора.</p>
+        <button class="btn btn-dark w-100" data-bs-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- INFO MODAL — универсальное модальное окно для сообщений -->
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4 text-center">
+        <h5 class="modal-title mb-3" id="infoModalTitle">Сообщение</h5>
+        <p id="infoModalBody" class="mb-3"></p>
+        <button class="btn btn-dark w-100" data-bs-dismiss="modal">Ок</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- BLOG MODAL -->
+  <div class="modal fade" id="blogModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content p-4">
+        <h5 class="modal-title mb-3" id="blogModalTitle"></h5>
+        <div id="blogModalContent" class="mb-4"></div>
+        <button type="button" class="btn btn-dark w-100" data-bs-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOGIN MODAL -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5 class="modal-title mb-3">Вход</h5>
+        <form id="loginForm">
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="loginEmail" required>
+          </div>
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Пароль</label>
+            <input type="password" class="form-control" id="loginPassword" required>
+          </div>
+          <button type="submit" class="btn btn-dark w-100">Войти</button>
+        </form>
+
+        <p class="text-center mt-3 mb-0 small">
+          Нет аккаунта?
+          <button
+            type="button"
+            class="btn btn-link p-0 align-baseline"
+            id="openRegisterFromLogin">
+            Зарегистрироваться
+          </button>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- REGISTER MODAL -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5 class="modal-title mb-3">Регистрация</h5>
+        <form id="registerForm">
+          <div class="mb-3">
+            <label for="regName" class="form-label">Имя</label>
+            <input type="text" class="form-control" id="regName" required>
+          </div>
+          <div class="mb-3">
+            <label for="regEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="regEmail" required>
+          </div>
+          <div class="mb-3">
+            <label for="regPassword" class="form-label">Пароль</label>
+            <input type="password" class="form-control" id="regPassword" required>
+          </div>
+          <button type="submit" class="btn btn-dark w-100">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
